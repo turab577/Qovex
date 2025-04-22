@@ -105,8 +105,8 @@ export default function Reviews() {
       <div className="py-16 border-2 border-[#dfdfdd] rounded-xl px-6 sm:px-20">
         <p className="text-[25px] sm:text-[50px] text-center text-black">What Client Says</p>
         <p className="text-[15px] sm:text-[20px] text-[#a0a0a0] text-center">
-          Our clients' feedback speaks volumes. Discover their stories of success, collaboration,
-          <br /> and the impactful results we've delivered together.
+          Our clients&apos; feedback speaks volumes. Discover their stories of success, collaboration,
+          <br /> and the impactful results we&apos;ve delivered together.
         </p>
 
         <div className="pt-20">

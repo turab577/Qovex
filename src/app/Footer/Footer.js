@@ -14,7 +14,7 @@ export default function Footer() {
           <Link href="/Contact">
         <div className='py-3 px-6 b g-[#74c8b0] rounded-lg inline-flex gap-3 cursor-pointer bg-[#74c8b0] hover:bg-[#013619] transition duration-500'>
                 <Image src={Assets.Mail2} alt="Let's talk" className="w-[30px] h-[20px] "/>
-        <p className='text-white  text-[15px]'>Lets' Talk</p>
+        <p className='text-white  text-[15px]'>Lets &apos; Talk</p>
         </div>
           </Link>
         </div>
@@ -23,7 +23,7 @@ export default function Footer() {
         <div className=' py-10 sm:py-20 flex flex-col lg:flex-row  lg:justify-around'>
             <div>
               <Image src={Assets.Logo} alt="Logo" className="w-36"/>
-                <p className=' text-[15px] sm:text-[20px] text-[#93b29c] pt-6'>Specializes in innovative digital marketing strategies, blending <br className='hidden xl:block'/> creativity and data-driven insights to elevate your brand's online <br className='hidden xl:block'/> presence and driven measurable growth.</p>
+                <p className=' text-[15px] sm:text-[20px] text-[#93b29c] pt-6'>Specializes in innovative digital marketing strategies, blending <br className='hidden xl:block'/> creativity and data-driven insights to elevate your brand&apos;s online <br className='hidden xl:block'/> presence and driven measurable growth.</p>
             </div>
             <div className='flex pt-6 lg:pt-0 gap-[20px] md:gap-[150px]'>
                 <ul className='text-[#93b29c] '>

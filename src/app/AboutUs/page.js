@@ -110,9 +110,9 @@ export default function AboutUs() {
         whileHover={{ scale: 1.02 }}
         className="mt-24 text-center bg-gradient-to-r from-[#74c8b0] to-[#389077] text-white py-14 px-8 rounded-3xl max-w-5xl mx-auto shadow-xl relative z-10"
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Let's Build the Future Together</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Let&apos;s Build the Future Together</h2>
         <p className="text-lg mb-6 max-w-2xl mx-auto">
-          Join hands with a passionate team that believes in purpose, people, and pushing the limits of what's possible.
+          Join hands with a passionate team that believes in purpose, people, and pushing the limits of what&apos;s possible.
         </p>
         <Link href="/Contact">
           <button className="bg-black cursor-pointer text-white font-semibold px-6 py-3 rounded-full hover:bg-[#013619] transition-all">

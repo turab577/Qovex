@@ -46,10 +46,10 @@ export default function Header() {
           <Link href="/"><Image src={Assets.Logo} alt="Qovex" className="w-20 h-20" /></Link>
         </div>
         <div className="w-[2px] h-[20px] bg-[#70c7ae] "></div>
-        <li><a href="/" className="hover:border-b-2 text-black hover:border-b-[#6ec6ad] transition pb-2 hover:text-[#6ec6ad]">Home</a></li>
-        <li><a href="#" className="hover:border-b-2 text-black hover:border-b-[#6ec6ad] transition pb-2 hover:text-[#6ec6ad]">Our Work</a></li>
-        <li><a href="#" className="hover:border-b-2 text-black hover:border-b-[#6ec6ad] transition pb-2 hover:text-[#6ec6ad]">Project</a></li>
-        <li><a href="#" className="hover:border-b-2 text-black hover:border-b-[#6ec6ad] transition pb-2 hover:text-[#6ec6ad]">Service</a></li>
+        <li><Link href="/" className="hover:border-b-2 text-black hover:border-b-[#6ec6ad] transition pb-2 hover:text-[#6ec6ad]">Home</Link></li>
+        <li><Link href="/" className="hover:border-b-2 text-black hover:border-b-[#6ec6ad] transition pb-2 hover:text-[#6ec6ad]">Our Work</Link></li>
+        <li><Link href="/" className="hover:border-b-2 text-black hover:border-b-[#6ec6ad] transition pb-2 hover:text-[#6ec6ad]">Project</Link></li>
+        <li><Link href="/" className="hover:border-b-2 text-black hover:border-b-[#6ec6ad] transition pb-2 hover:text-[#6ec6ad]">Service</Link></li>
         <li><Link href="/AboutUs" passHref className="hover:border-b-2 text-black hover:border-b-[#6ec6ad] transition pb-2 hover:text-[#6ec6ad]">About us</Link></li>
       </ul>
 
@@ -68,11 +68,11 @@ export default function Header() {
           </div>
 
           <ul className="flex flex-col gap-6 mt-10 text-[16px] text-gray-800 font-medium">
-            <li onClick={toggleMenu}><a href="/">Home</a></li>
-            <li onClick={toggleMenu}><a href="#">Our Work</a></li>
-            <li onClick={toggleMenu}><a href="#">Project</a></li>
-            <li onClick={toggleMenu}><a href="#">Service</a></li>
-            <li onClick={toggleMenu}><a href="/AboutUs">About Us</a></li>
+            <li onClick={toggleMenu}><Link href="/">Home</Link></li>
+            <li onClick={toggleMenu}><Link href="/">Our Work</Link></li>
+            <li onClick={toggleMenu}><Link href="/">Project</Link></li>
+            <li onClick={toggleMenu}><Link href="/">Service</Link></li>
+            <li onClick={toggleMenu}><Link href="/AboutUs">About Us</Link></li>
           </ul>
         </div>
       )}
