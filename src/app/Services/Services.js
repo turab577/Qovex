@@ -47,7 +47,7 @@ export default function Services() {
       <br className="hidden md:block" />
       social marketing, and targeted ads.
     </p>
-    <div className="md:p-3 border-2  border-white cursor-pointer rounded-2xl  mt-3 lg:mt-0 inline-flex justify-between hover:bg-[#63977a] transition-colors duration-300 pr-4 w-[295px] pt-2 pb-3">
+    <div className="md:p-3 border-2  border-white cursor-pointer rounded-2xl h-[47px]  mt-3 lg:mt-0 inline-flex justify-between hover:bg-[#63977a] transition-colors duration-300 pr-4 w-[295px] pt-2 pb-3">
       <p className="text-white text-[12px] pl-10 sm:pl-0 md:text-[15px] inline-block pt-2 sm:pt-0 ">
       Schedule a Free Strategy Session
       </p>
