@@ -5,33 +5,33 @@ export default function Services() {
     const cards = [ 
       {
         Id: 0,
-        title: "Web and app development",
-        content: "We develop digital assets, such as websites, microsites, and mobile apps, for your business.",
+        title: "Web & App Development",
+        content: "We provide the best IT solutions for your business. Website is the face of your brand, and our team is fully adept to create..."
       },
       {
         Id: 1,
         title: "Social Media Marketing",
-        content: "We help you to promote your brand on Facebook, Twitter, Instagram with best social strategies.",
+        content: "Data-backed strategies for Instagram, Facebook, Twitter & LinkedIn that boost engagement and trust."
       },
       {
         Id: 2,
         title: "Email Marketing",
-        content: "We help you to build your lists and send them newsletters regularly or simply an email blast.",
+        content: "List-building, automation, and beautifully crafted newsletters that drive repeat conversions.",
       },
       {
         Id: 3,
-        title: "Search Engine Marketing",
-        content: "We are specially partnering with Google to help your websites appear on the top within minutes.",
+        title: "SEO &Search Engine Marketing",
+        content: "Our agency offers top-notch SEO services to boost your online presence. Through meticulous keyword research, content optimisation, and strategic link building, we drive organic traffic, elevate search rankings, and amplify your digital success.",
       },
       {
         Id: 4,
-        title: "Creative and Content",
-        content: "We think outside the box to create content that matters to your audience & business growth.",
+        title: "Creative & Content Development",
+        content: "We are a one-stop solution to your marketing and advertising needs, having all the resources to match your requirements...",
       },
       {
         Id: 5,
         title: "Digital Advertising & PPC",
-        content: "We make your digital media buying and PPC easier by partnering with a lot of publishers.",
+        content: "Performance marketing that scales. Google Ads, Meta Ads, YouTube — managed with ROI in mind.",
       },
     ];
   
@@ -47,9 +47,9 @@ export default function Services() {
       <br className="hidden md:block" />
       social marketing, and targeted ads.
     </p>
-    <div className="md:p-3 border-2 gap-4 border-white cursor-pointer rounded-2xl h-10 sm:h-12 mt-3 lg:mt-0 inline-flex hover:bg-[#63977a] transition-colors duration-300 w-[195px]">
+    <div className="md:p-3 border-2 gap-4 border-white cursor-pointer rounded-2xl h-10 sm:h-12 mt-3 lg:mt-0 inline-flex hover:bg-[#63977a] transition-colors duration-300 w-[295px]">
       <p className="text-white text-[12px] pl-10 sm:pl-0 md:text-[15px] inline-block pt-3 sm:pt-0 ">
-        Schedule Discussion
+      Schedule a Free Strategy Session
       </p>
       <p className="text-white text-[15px]">&gt;</p>
     </div>

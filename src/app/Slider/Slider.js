@@ -41,16 +41,17 @@ export default function Slider() {
         className="w-full max-h-[700px] mx-auto rounded-xl overflow-hidden"
       >
         {images.map((img, index) => (
-          <SwiperSlide key={index}>
-            <Image
-              src={img}
-              alt={`Slide ${index + 1}`}
-              width={1200}
-              height={600}
-              className="object-cover w-full h-auto"
-            />
-          </SwiperSlide>
-        ))}
+  <SwiperSlide key={index}>
+    <Image
+      src={img}
+      alt={`Slide ${index + 1}`}
+      width={1200}
+      height={600}
+      className="object-cover w-full h-auto"
+    />
+  </SwiperSlide>
+))}
+
       </Swiper>
     </div>
   );

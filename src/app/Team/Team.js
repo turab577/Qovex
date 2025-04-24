@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-
 import { useRef, useState } from "react";
 
 export default function Team() {
@@ -25,17 +24,13 @@ export default function Team() {
     { image: Assets.Person8, name: "Lina May", role: "Project Manager" },
   ];
 
-  // Split into 2 groups for 2 SwiperSlides
-  const groupSize = teamMembers.length / 2;
-  const groupedMembers = [teamMembers.slice(0, groupSize), teamMembers.slice(groupSize)];
-
   return (
     <div className="relative pl-10 pr-6 pt-10">
       <div>
-        <p className="text-[30px] sm:text-[50px] font-semibold text-black ">Meet Our Team</p>
+        <p className="text-[30px] sm:text-[50px] font-semibold text-black ">👩‍💻 Meet Our Expert Team</p>
         <p className="pt-6 text-[#848582]">
-          Meet our team of passionate digital marketing experts, dedicated to <br />
-          crafting innovative solutions that fuel success.
+          Our people are our superpower.
+          From developers and designers to marketing strategists <br className="hidden md:block" /> and SEO gurus — Qovex is built on collaboration, creativity, and client-first culture.
         </p>
       </div>
 
@@ -48,7 +43,7 @@ export default function Team() {
           {'<'}
         </button>
         <span className="text-sm text-gray-600">
-          {currentSlide} / {groupedMembers.length}
+          {currentSlide} / {teamMembers.length}
         </span>
         <button
           ref={nextRef}
@@ -63,7 +58,6 @@ export default function Team() {
         loop={true}
         modules={[Navigation]}
         spaceBetween={20}
-        slidesPerView={1}
         onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex + 1)}
         navigation={{
           prevEl: prevRef.current,
@@ -73,26 +67,28 @@ export default function Team() {
           swiper.params.navigation.prevEl = prevRef.current;
           swiper.params.navigation.nextEl = nextRef.current;
         }}
+        breakpoints={{
+          320: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
+        }}
         className="w-full"
       >
-        {groupedMembers.map((group, idx) => (
-          <SwiperSlide key={idx}>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {group.map((member, index) => (
-                <div key={index} className="rounded-xl overflow-hidden shadow-md text-center">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={300}
-                    height={300}
-                    className="w-full h-[260px] object-cover"
-                  />
-                  <div className="pt-4 pb-6">
-                    <p className="text-[16px] font-semibold text-black">{member.name}</p>
-                    <p className="text-[14px] text-gray-500">{member.role}</p>
-                  </div>
-                </div>
-              ))}
+        {teamMembers.map((member, index) => (
+          <SwiperSlide key={index}>
+            <div className="rounded-xl overflow-hidden shadow-md text-center">
+              <Image
+                src={member.image}
+                alt={member.name}
+                width={300}
+                height={300}
+                className="w-full h-[260px] object-cover"
+              />
+              <div className="pt-4 pb-6">
+                <p className="text-[16px] font-semibold text-black">{member.name}</p>
+                <p className="text-[14px] text-gray-500">{member.role}</p>
+              </div>
             </div>
           </SwiperSlide>
         ))}

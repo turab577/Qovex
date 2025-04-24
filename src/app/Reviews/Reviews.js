@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -16,7 +15,7 @@ export default function Reviews() {
       name: "Robert Fox",
       Rank: "Ceo of UrbanNest's",
       Comment:
-        "The digital marketing team transformed our online presence, delivering exceptional results with their SEO and their targeted ads. Highly recommended their professional approach",
+        "Qovex transformed our digital presence. Smart strategy, clear results.",
     },
     {
       id: 1,
@@ -24,7 +23,7 @@ export default function Reviews() {
       name: "Leslie Alexander",
       Rank: "Manager FashionWave's",
       Comment:
-        "We've seen incredible growth thanks to their tailored digital marketing strategies. The team expertise in SEO and social media has been invaluable.",
+        "“They don’t just execute — they understand the brand. That’s rare.”",
     },
     {
       id: 2,
@@ -32,7 +31,7 @@ export default function Reviews() {
       name: "Emily Davis",
       Rank: "Founder of StyleCore",
       Comment:
-        "Amazing collaboration. Their team was on point with strategy and delivery. Results spoke for themselves!",
+        "Qovex scaled our startup with aggressive SEO and clever PPC. 100% recommended.",
     },
     {
       id: 3,
@@ -103,48 +102,53 @@ export default function Reviews() {
   return (
     <div className="pt-16 px-6">
       <div className="py-16 border-2 border-[#dfdfdd] rounded-xl px-6 sm:px-20">
-        <p className="text-[25px] sm:text-[50px] text-center text-black">What Client Says</p>
+        <p className="text-[25px] sm:text-[50px] text-center text-black">What Clients Says</p>
         <p className="text-[15px] sm:text-[20px] text-[#a0a0a0] text-center">
           Our clients&apos; feedback speaks volumes. Discover their stories of success, collaboration,
           <br /> and the impactful results we&apos;ve delivered together.
         </p>
 
         <div className="pt-20">
-          <Swiper
-            modules={[Navigation]}
-            loop={true}
-            slidesPerView={1} // Always show 1 slide per view
-            spaceBetween={30}
-            onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex + 1)}
-            onBeforeInit={(swiper) => {
-              swiperRef.current = swiper;
-            }}
-            className="w-full"
-          >
-            {chunkedClients.map((group, index) => (
-              <SwiperSlide key={index}>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                  {group.map((client) => (
-                    <div
-                      key={client.id}
-                      className="border border-[#dfdfdd] p-6 rounded-xl"
-                    >
-                      <div className="flex gap-4">
-                        <Image src={client.image} alt="Clients" className="h-16 w-16 rounded-xl" />
-                        <div>
-                          <div className="font-semibold text-lg md:text-xl text-black">{client.name}</div>
-                          <div className="text-[#c6c6c6] sm:pt-2">{client.Rank}</div>
-                        </div>
-                      </div>
-                      <div className="pt-1 sm:pt-6 text-[12px] sm:text-[15px] text-[#444]">
-                        {client.Comment}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <Swiper
+  modules={[Navigation]}
+  loop={true}
+  spaceBetween={30}
+  navigation={false}
+  slidesPerView={1} // Default
+  breakpoints={{
+    640: {
+      slidesPerView: 1, // mobile
+    },
+    768: {
+      slidesPerView: 2, // tablets
+    },
+    1024: {
+      slidesPerView: 2, // desktops
+    },
+  }}
+  onSlideChange={(swiper) => setCurrentSlide(swiper.realIndex + 1)}
+  onBeforeInit={(swiper) => {
+    swiperRef.current = swiper;
+  }}
+  className="w-full"
+>
+  {Clients.map((client) => (
+    <SwiperSlide key={client.id}>
+      <div className="border border-[#dfdfdd] p-6 rounded-xl h-full">
+        <div className="flex gap-4">
+          <Image src={client.image} alt="Clients" className="h-16 w-16 rounded-xl" />
+          <div>
+            <div className="font-semibold text-lg md:text-xl text-black">{client.name}</div>
+            <div className="text-[#c6c6c6] sm:pt-2">{client.Rank}</div>
+          </div>
+        </div>
+        <div className="pt-1 sm:pt-6 text-[12px] sm:text-[15px] text-[#444]">
+          {client.Comment}
+        </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
 
           {/* Bottom Controls */}
           <div className="flex justify-center items-center gap-6 pt-8">
@@ -154,9 +158,8 @@ export default function Reviews() {
             >
               {"<"}
             </button>
-            <span className="text-gray-500 text-sm">
-              {currentSlide} / {chunkedClients.length}
-            </span>
+            
+            
             <button
               onClick={() => swiperRef.current?.slideNext()}
               className="px-4 py-2 border cursor-pointer bg-[#74c8b0] hover:bg-[#03331abe] border-[#00000028] duration-500 text-[white]  rounded-xl transition"

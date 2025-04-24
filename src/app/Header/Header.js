@@ -37,8 +37,11 @@ export default function Header() {
 
       {/* Logo for mobile */}
       <div className="mt-[-27px] md:hidden block">
-        <Link href="/"><Image src={Assets.Logo} alt="Qovex" className="w-20 h-20 mt-10" /></Link>
-      </div>
+  <Link href="/">
+    <Image src={Assets.Logo} alt="Qovex" className="w-20 h-20 mt-10" />
+  </Link>
+</div>
+
 
       {/* Desktop navbar */}
       <ul className='p-9 gap-5 text-[14px] hidden sm:flex'>

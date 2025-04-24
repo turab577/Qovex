@@ -13,13 +13,14 @@ export default function Landing() {
     </div>
     <div>
       <p className="text-black text-[20px] sm:text-[40px] lg:text-[60px] font-medium flex justify-center">DIGITAL MARKETING AGENCY</p>
-      <p className=" text-[12px] sm:text-[15px] text-black flex justify-center text-center pt-[5px] sm:pt-0">Digital agency crafting impactful, user-cetric experiences with cutting-edge design and technology <br className="hidden md:block"/> for maximum success.Innovative digital agency crafting impactful</p>
+      <p className=" text-[12px] sm:text-[15px] text-black flex justify-center text-center pt-[5px] sm:pt-0">We are not just a digital agency — we are your strategic growth team. At Qovex,  we specialise in turning <br className="hidden md:block"/> ideas into scalable, ROI-focused digital experiences.
+      </p>
     </div>
     <div className="flex justify-center pt-8 gap-6">
       <Link href="/Contact" className="py-3 px-9 hover:bg-[#03331abe] flex bg-[#6ec6ad] rounded-xl text-white cursor-pointer duration-500 text-[12px] sm:text-[20px]">
-         <p>Get In Touch</p>
+         <p>Let&apos;s Talk</p>
           </Link>
-      <a href="#" className="py-3 px-9 rounded-xl border-2 cursor-pointer hover:bg-[#03331abe] hover:text-white duration-500 text-[12px] sm:text-[20px] text-black">Learn More</a>
+      <a href="#" className="py-3 px-9 rounded-xl border-2 cursor-pointer hover:bg-[#03331abe] hover:text-white duration-500 text-[12px] sm:text-[20px] text-black">Explore Our Work</a>
     </div>
     </div>
   )
