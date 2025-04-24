@@ -23,7 +23,7 @@ export default function Slider() {
   ];
 
   return (
-    <div className="px-6 pt-16">
+    <div className=" px-1 sm:px-6 pt-16">
       <Swiper
         modules={[Autoplay, Navigation]}
         spaceBetween={0}

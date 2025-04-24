@@ -6,7 +6,7 @@ export default function Landing() {
   return (
     
     <div>
-    <div className="flex justify-center pt-[46px] gap-11">
+    <div className="flex justify-center pt-0 sm:pt-[46px]  gap-11">
       <div className='bg-[#bdbebb] h-[2px] ml-3 w-10 md:w-16 mt-[20px] sm:mt-[36px]'></div>
       <p className="text-[#bdbebb] text-[30px] sm:text-[50px]">Qovex</p>
       <div className='bg-[#bdbebb] h-[2px] w-10 md:w-16 mt-[24px] sm:mt-[36px]'></div>

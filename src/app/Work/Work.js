@@ -2,16 +2,16 @@ import Image from "next/image";
 import { Assets } from "@/Assets/page";
 export default function Work() {
   return (
-    <div className="pt-6 px-3  sm:pl-6">
-      <div className="pt-20 px-10 border-2 border-[#ececec] rounded-xl  pb-10">
-        <p className=" text-[35px] sm:text-[50px] text-black">Why Choose Qovex?</p>
+    <div className="pt-6 px-1 sm:px-3  sm:pl-6">
+      <div className=" pt-7 sm:pt-20 px-3 sm:px-10 border-2 border-[#ececec] rounded-xl  pb-10">
+        <p className=" text-[29px] sm:text-[50px] text-black">Why Choose Qovex?</p>
         {/* Section1 */}
         <div className="flex flex-col sm:flex-row justify-between pb-16 border-b border-b-[#646464]">
           <p className="text-[#787878] pt-3">
           We deliver excellence, we have a team of experts with rigorous experience <br className="hidden md:block"/> in field who strive to provide the best services in launching and building brands.
 
           </p>
-          <div className="border-2 rounded-xl p-3 inline-flex h-12 mt-5  cursor-pointer hover:bg-[#74c8b0] group gap-4 w-[140px]">
+          <div className="border-2 rounded-xl p-3 inline-flex justify-center h-12 mt-5  cursor-pointer hover:bg-[#74c8b0] group gap-4 w-[140px]">
             <p className="text-[15px] text-black group-hover:text-white duration-700 ">
               Show More
             </p>
@@ -25,7 +25,7 @@ export default function Work() {
                 <p className="text-[15px] inline border rounded-full p-3 text-black">SEO Optimization</p>
                 <p className=" pt-10 sm:pt-20 font-semibold text-[20px] sm:text-[30px] text-black"> 📈 TechCorp – SEO Strategy
                 </p>
-                <p className="pt-3 text-[#c3bdbd] text-[12px] text-center sm:text-[15px] "> Increased organic traffic by 50% with comprehensive keyword <br className="hiden md:block"/> targeting and technical SEO.
+                <p className="pt-3 text-[#c3bdbd] text-[12px] text-center sm:text-[15px] "> Increased organic traffic by 50% with comprehensive keyword <br className="hidden md:block"/> targeting and technical SEO.
                 </p>
             </div>
             <div className="pt-10">
@@ -34,7 +34,7 @@ export default function Work() {
         </div>
 
         {/* Section3 */}
-        <div className="flex border-b flex-col xl:flex-row border-b-[#646464] justify-center items-center xl:justify-between pb-10">
+        <div className="flex border-b flex-col xl:flex-row border-b-[#646464] justify-center items-center xl:justify-between pb-0 sm:pb-10">
         <div className="pt-10">
             <Image src={Assets.image5} className="rounded-xl w-full" alt="SEO optimization"/>
             </div>
@@ -53,7 +53,7 @@ export default function Work() {
             <p className=" pt-6 sm:pt-20 text-[20px] sm:text-[30px] text-black">🏠 UrbanNest – Brand Identity </p>
             <p className="text-[#c3bdbd] text-[12px] sm:text-[15px] pt-6"> Complete identity overhaul that improved recall and engagement by 60%.</p>
             </div>
-            <div className="pt-10">
+            <div className="sm:pt-10">
             <Image src={Assets.image7} className="rounded-xl w-full" alt="SEO optimization"/>
             </div>
         </div>

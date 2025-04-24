@@ -45,7 +45,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen p-3 sm:p-8">
       <div className="container mx-auto max-w-4xl bg-white p-8 rounded-lg shadow-xl">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-[#2a3d66]">Get in Touch</h1>

@@ -22,8 +22,20 @@ import Mail2 from "@/Assets/Mail2.jpg";
 import Arrow from "@/Assets/Arrow.png";
 import Logo from "@/Assets/Logo.svg";
 import Copy from "@/Assets/Copy.jpg";
+import Zain from "@/Assets/Zain.webp";
+import Sarmast from "@/Assets/Sarmast.webp";
+import Waqar from "@/Assets/Waqar.webp";
+import Ahsan from "@/Assets/Ahsan.webp";
+import Qaim from "@/Assets/Qaim.webp";
+import Sibte from "@/Assets/Sibte.webp";
 
 export const Assets = {
+  Sibte,
+  Qaim,
+  Ahsan ,
+  Waqar,
+  Sarmast,
+  Zain,
   Burgur,
   Meet,
   Image,

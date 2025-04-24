@@ -100,15 +100,15 @@ export default function Reviews() {
   );
 
   return (
-    <div className="pt-16 px-6">
-      <div className="py-16 border-2 border-[#dfdfdd] rounded-xl px-6 sm:px-20">
+    <div className=" pt-1.5 px-1 sm:pt-16 sm:px-6">
+      <div className=" py-7 sm:py-16 border-2 border-[#dfdfdd] rounded-xl px-2 sm:px-20">
         <p className="text-[25px] sm:text-[50px] text-center text-black">What Clients Says</p>
         <p className="text-[15px] sm:text-[20px] text-[#a0a0a0] text-center">
           Our clients&apos; feedback speaks volumes. Discover their stories of success, collaboration,
           <br /> and the impactful results we&apos;ve delivered together.
         </p>
 
-        <div className="pt-20">
+        <div className=" pt-5 sm:pt-20">
         <Swiper
   modules={[Navigation]}
   loop={true}

@@ -14,18 +14,17 @@ export default function Team() {
   const [currentSlide, setCurrentSlide] = useState(1);
 
   const teamMembers = [
-    { image: Assets.Person1, name: "Liam Johnson", role: "Creative Director" },
-    { image: Assets.Person2, name: "James Lee", role: "Marketing Manager" },
-    { image: Assets.Person3, name: "Ava Patel", role: "Lead Designer" },
-    { image: Assets.Person4, name: "Sophia Turner", role: "Full Stack Developer" },
-    { image: Assets.Person5, name: "Olivia Smith", role: "SEO Specialist" },
-    { image: Assets.Person6, name: "Ethan Garcia", role: "Content Strategist" },
+    { image: Assets.Qaim, name: "Qaim Raza Khan", role: "Creative Director"},
+    { image: Assets.Sarmast, name: "Sarmast Faiz", role: "Content Writer" },
+    { image: Assets.Ahsan, name: "Ahsan", role: "Full Stack Developer" },
+    { image: Assets.Zain, name: "Zain Ul Abidin", role: "SEO Specialist" },
+    { image: Assets.Sibte, name: "Sibte Hassan", role: "Graphic Designer" },
     { image: Assets.Person7, name: "Emma Brown", role: "UI/UX Designer" },
     { image: Assets.Person8, name: "Lina May", role: "Project Manager" },
   ];
 
   return (
-    <div className="relative pl-10 pr-6 pt-10">
+    <div className="relative  pl-1 pr-1 sm:pl-10 sm:pr-6 pt-10">
       <div>
         <p className="text-[30px] sm:text-[50px] font-semibold text-black ">👩‍💻 Meet Our Expert Team</p>
         <p className="pt-6 text-[#848582]">
@@ -82,7 +81,7 @@ export default function Team() {
                 src={member.image}
                 alt={member.name}
                 width={300}
-                height={300}
+                height={900}
                 className="w-full h-[260px] object-cover"
               />
               <div className="pt-4 pb-6">

@@ -11,12 +11,12 @@ export default function Services() {
       {
         Id: 1,
         title: "Social Media Marketing",
-        content: "Data-backed strategies for Instagram, Facebook, Twitter & LinkedIn that boost engagement and trust."
+        content: "We provide you Data-backed strategies for Instagram, Facebook, Twitter & LinkedIn that boost engagement and trust."
       },
       {
         Id: 2,
         title: "Email Marketing",
-        content: "List-building, automation, and beautifully crafted newsletters that drive repeat conversions.",
+        content: "List-building, strategic automation, and beautifully crafted newsletters that consistently drive repeat conversions and foster lasting customer relationships.",
       },
       {
         Id: 3,
@@ -36,22 +36,22 @@ export default function Services() {
     ];
   
     return (
-      <div className="pt-16 ">
-        <div className="text-2xl bg-[#013818] rounded-2xl px-6 sm:px-16 pt-16 pb-20 shadow-lg">
+      <div className=" pt-7 sm:pt-16 ">
+        <div className="text-2xl bg-[#013818] rounded-2xl px-2 sm:px-16 pt-16 pb-20 shadow-lg">
   <p className="text-[30px] md:text-[50px] text-white font-bold tracking-wide flex ">
     Our Services
   </p>
-  <div className="flex flex-col lg:flex-row sm:justify-between pr-10 pb-10">
+  <div className="flex flex-col lg:flex-row sm:justify-between pr-0 sm:pr-10 pb-10">
     <p className="text-[#63977a] pt-3 text-[15px] md:text-[20px] leading-relaxed">
       Our digital marketing service boosts your presence with SEO, 
       <br className="hidden md:block" />
       social marketing, and targeted ads.
     </p>
-    <div className="md:p-3 border-2 gap-4 border-white cursor-pointer rounded-2xl h-10 sm:h-12 mt-3 lg:mt-0 inline-flex hover:bg-[#63977a] transition-colors duration-300 w-[295px]">
-      <p className="text-white text-[12px] pl-10 sm:pl-0 md:text-[15px] inline-block pt-3 sm:pt-0 ">
+    <div className="md:p-3 border-2  border-white cursor-pointer rounded-2xl  mt-3 lg:mt-0 inline-flex justify-between hover:bg-[#63977a] transition-colors duration-300 pr-4 w-[295px] pt-2 pb-3">
+      <p className="text-white text-[12px] pl-10 sm:pl-0 md:text-[15px] inline-block pt-2 sm:pt-0 ">
       Schedule a Free Strategy Session
       </p>
-      <p className="text-white text-[15px]">&gt;</p>
+      <p className="text-white text-[15px] mt-[5px] sm:mt-0">&gt;</p>
     </div>
   </div>
 
