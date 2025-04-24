@@ -76,7 +76,7 @@ export default function Team() {
       >
         {teamMembers.map((member, index) => (
           <SwiperSlide key={index}>
-            <div className="rounded-xl overflow-hidden shadow-md text-center">
+            <div className="rounded-xl mb-5 overflow-hidden shadow-md text-center">
               <Image
                 src={member.image}
                 alt={member.name}
