@@ -82,7 +82,7 @@ export default function Team() {
                 alt={member.name}
                 width={300}
                 height={900}
-                className="w-full h-[260px] object-cover"
+                className="w-full h-[330px] object-cover"
               />
               <div className="pt-4 pb-6">
                 <p className="text-[16px] font-semibold text-black">{member.name}</p>
