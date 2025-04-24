@@ -21,7 +21,7 @@ export default function Services() {
       {
         Id: 3,
         title: "SEO &Search Engine Marketing",
-        content: "Our agency offers top-notch SEO services to boost your online presence. Through meticulous keyword research, content optimisation, and strategic link building, we drive organic traffic, elevate search rankings, and amplify your digital success.",
+        content: "Through meticulous keyword research, and strategic link building, we drive organic traffic, elevate search rankings, and amplify your digital success.",
       },
       {
         Id: 4,
@@ -31,7 +31,7 @@ export default function Services() {
       {
         Id: 5,
         title: "Digital Advertising & PPC",
-        content: "Performance marketing that scales. Google Ads, Meta Ads, YouTube — managed with ROI in mind.",
+        content: "Performance marketing that scales. Google Ads, Meta Ads, YouTube and other social media platforms — managed with ROI in mind.",
       },
     ];
   
