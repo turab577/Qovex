@@ -6,7 +6,7 @@ export default function Landing() {
   return (
     
     <div>
-    <div className="flex justify-center pt-0 sm:pt-[46px]  gap-11">
+    <div className="flex justify-center sm:pt-[46px]  gap-11">
       <div className='bg-[#bdbebb] h-[2px] ml-3 w-10 md:w-16 mt-[20px] sm:mt-[36px]'></div>
       <p className="text-[#bdbebb] text-[30px] sm:text-[50px]">Qovex</p>
       <div className='bg-[#bdbebb] h-[2px] w-10 md:w-16 mt-[24px] sm:mt-[36px]'></div>
@@ -18,7 +18,7 @@ export default function Landing() {
     </div>
     <div className="flex justify-center pt-8 gap-6">
       <Link href="/Contact" className="py-3 px-9 hover:bg-[#03331abe] flex bg-[#6ec6ad] rounded-xl text-white cursor-pointer duration-500 text-[12px] sm:text-[20px]">
-         <p>Let&apos;s Talk</p>
+         <p className="px-[40px]">Let&apos;s Talk</p>
           </Link>
       <a href="#" className="py-3 px-9 rounded-xl border-2 cursor-pointer hover:bg-[#03331abe] hover:text-white duration-500 text-[12px] sm:text-[20px] text-black">Explore Our Work</a>
     </div>
