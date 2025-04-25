@@ -17,10 +17,10 @@ export default function Landing() {
       </p>
     </div>
     <div className="flex justify-center pt-8 gap-6">
-      <Link href="/Contact" className="py-3 px-9 hover:bg-[#03331abe] flex bg-[#6ec6ad] rounded-xl text-white cursor-pointer duration-500 text-[12px] sm:text-[20px]">
+      <Link href="/Contact" className="py-3 px-3 sm:px-9 hover:bg-[#03331abe] flex bg-[#6ec6ad] rounded-xl text-white cursor-pointer duration-500 text-[12px] sm:text-[20px]">
          <p className="px-[40px]">Let&apos;s Talk</p>
           </Link>
-      <a href="#" className="py-3 px-9 rounded-xl border-2 cursor-pointer hover:bg-[#03331abe] hover:text-white duration-500 text-[12px] sm:text-[20px] text-black">Explore Our Work</a>
+      <a href="#" className="py-3 px-3 sm:px-9 rounded-xl border-2 cursor-pointer hover:bg-[#03331abe] hover:text-white duration-500 text-[12px] sm:text-[20px] text-black">Explore Our Work</a>
     </div>
     </div>
   )

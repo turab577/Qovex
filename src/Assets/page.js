@@ -28,8 +28,9 @@ import Waqar from "@/Assets/Waqar.webp";
 import Ahsan from "@/Assets/Ahsan.webp";
 import Qaim from "@/Assets/Qaim.webp";
 import Sibte from "@/Assets/Sibte.webp";
-
+import LogoLight from "@/Assets/LogoLight.svg";
 export const Assets = {
+  LogoLight,
   Sibte,
   Qaim,
   Ahsan ,

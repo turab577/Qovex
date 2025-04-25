@@ -22,7 +22,7 @@ export default function Footer() {
 
         <div className=' py-10 sm:py-20 flex flex-col lg:flex-row  lg:justify-around'>
             <div>
-              <Image src={Assets.Logo} alt="Logo" className="w-36"/>
+              <Image src={Assets.LogoLight} alt="Logo" className="w-36"/>
                 <p className=' text-[15px] sm:text-[20px] text-[#93b29c] pt-6'>Specializes in innovative digital marketing strategies, blending <br className='hidden xl:block'/> creativity and data-driven insights to elevate your brand&apos;s online <br className='hidden xl:block'/> presence and driven measurable growth.</p>
             </div>
             <div className='flex pt-6 lg:pt-0 gap-[20px] md:gap-[150px]'>
