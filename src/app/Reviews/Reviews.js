@@ -39,7 +39,7 @@ export default function Reviews() {
       name: "Michael Chen",
       Rank: "CTO of CloudNest",
       Comment:
-        "They revamped our SEO game and online strategy. Visibility and engagement shot up within weeks.",
+        "They revamped our SEO game and online strategy. ",
     },
     {
       id: 4,
