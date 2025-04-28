@@ -23,7 +23,7 @@ export default function Work() {
 
         {/* Section 2 */}
 <div className="flex justify-center ">
-  <div className="bg-[#F4F4F4] flex flex-col xl:flex-row items-center justify-between border-b border-b-[#646464] border-l-4 border-l-[#6EC6AD] rounded-3xl mt-[20px] sm:mt-[86px] w-full max-w-[1500px] overflow-hidden">
+  <div className="bg-[#F4F4F4] flex flex-col xl:flex-row items-center justify-between  border-l-4 border-l-[#6EC6AD] rounded-3xl mt-[20px] sm:mt-[86px] w-full max-w-[1500px] overflow-hidden">
 
     {/* Text Section */}
     <div className="flex flex-col items-center xl:items-start text-center xl:text-left p-6 sm:p-12">
