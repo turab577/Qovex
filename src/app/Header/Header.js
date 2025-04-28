@@ -11,6 +11,9 @@ export default function Header() {
     setIsVisible(prev => !prev);
   };
 
+  
+  
+
   // Handle overflow when menu is toggled
   useEffect(() => {
     document.body.style.overflowY = isVisible ? 'hidden' : 'auto';
@@ -32,7 +35,7 @@ export default function Header() {
     <div className='flex justify-between'>
       {/* Mobile burger icon */}
       <div className="mt-[25px] sm:hidden block" onClick={toggleMenu}>
-        <Image src={Assets.Burgur} alt="menu" className="h-10 w-10  ml-5" />
+        <Image src={Assets.Burgur} alt="menu" className="h-10 w-10  ml-5 mt-[5px]" />
       </div>
 
       {/* Logo for mobile */}
