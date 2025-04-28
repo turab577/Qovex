@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Inter } from 'next/font/google'
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import { Assets } from "@/Assets/page";
@@ -26,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  max-w-[1500px] mx-auto bg-white`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  max-w-[1500px] mx-auto bg-white `}
       >
 
         <div className="bg-white">

@@ -82,11 +82,12 @@ export default function Header() {
 
       {/* Let's Talk button */}
       <div className="pt-7 pr-6">
-        <Link href="/Contact" className='border-2 text-black duration-200 transition-shadow cursor-pointer rounded-lg h-10 flex hover:bg-[#74c8b0]'>
-          <span  className='px-3 py-[10px] h-1 text-[12px] text-black'>
+        <Link href="/Contact" className='border-2 text-black duration-200 transition-shadow cursor-pointer rounded-lg h-10 flex gap-2 hover:bg-[#111722] group'>
+          <span  className='px-3 py-[10px] h-1 text-[12px] text-black group-hover:text-white'>
             Let&apos;s Talk
           </span>
-          <Image src={Assets.Mail} alt="Let's talk" className="w-[30px] h-[15px] ml-[-10px] mt-3" />
+          <Image src={Assets.Mail} alt="Let's talk" className="w-[30px] h-[15px] ml-[-10px] mt-3 group-hover:hidden" />
+          <Image src={Assets.LightArrow} alt="Light-Arrow" className="hidden group-hover:block w-[30px] ml-[-10px] mt-3 h-[15px]"/>
         </Link>
       </div>
     </div>

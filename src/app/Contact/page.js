@@ -64,7 +64,7 @@ export default function Contact() {
                   type="text"
                   id="name"
                   placeholder="John Doe"
-                  className="w-full px-4 py-3 border border-[#d1d9e6] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6c8fdd]"
+                  className="w-full px-4 py-3 border border-[#d1d9e6] text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6EC6AD]"
                   value={name}
                   onChange={(e) => setName(e.target.value)} // Update state when name is entered
                 />
@@ -77,7 +77,7 @@ export default function Contact() {
                   type="email"
                   id="email"
                   placeholder="youremail@example.com"
-                  className="w-full px-4 py-3 border border-[#d1d9e6] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6c8fdd]"
+                  className="w-full px-4 py-3 border border-[#d1d9e6] rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-[#6EC6AD]"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)} // Update state when email is entered
                 />
@@ -86,6 +86,7 @@ export default function Contact() {
               <div className="mb-6">
                 <label htmlFor="phone" className="block text-sm font-semibold text-[#2a3d66] mb-2">Phone Number</label>
                 <PhoneInput
+                  cla
                   country={'us'}  // Set default country
                   value={phone}
                   onChange={setPhone}
@@ -108,7 +109,7 @@ export default function Contact() {
                   id="message"
                   rows="4"
                   placeholder="Tell us more about your project"
-                  className="w-full px-4 py-3 border border-[#d1d9e6] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6c8fdd]"
+                  className="w-full px-4 py-3 border border-[#d1d9e6] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6EC6AD]"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)} // Update state when message is entered
                 ></textarea>
@@ -139,3 +140,5 @@ export default function Contact() {
     </div>
   );
 }
+
+

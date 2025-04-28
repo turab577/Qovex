@@ -8,10 +8,10 @@ export default function Work() {
         {/* Section1 */}
         <div className="flex flex-col sm:flex-row justify-between pb-16 border-b border-b-[#646464]">
           <p className="text-[#787878] pt-3">
-          We deliver excellence, we have a team of experts with rigorous experience <br className="hidden md:block"/> in field who strive to provide the best services in launching and building brands.
+          We deliver excellence, we have a team of experts with rigorous experience <br className="hidden lg:block"/> in field who strive to provide the best services in launching and building brands.
 
           </p>
-          <div className="border-2 rounded-xl p-3 inline-flex justify-center h-12 mt-5  cursor-pointer hover:bg-[#74c8b0] group gap-4 w-[140px]">
+          <div className="border-2 rounded-xl p-3 inline-flex justify-center h-12 mt-5  cursor-pointer hover:bg-[#111722] group gap-4 w-[140px]">
             <p className="text-[15px] text-black group-hover:text-white duration-700 ">
               Show More
             </p>
@@ -20,43 +20,97 @@ export default function Work() {
           </div>
         </div>
         {/* Section2 */}
-        <div className="pb-6 border-b border-b-[#646464] flex flex-col xl:flex-row items-center xl:justify-between">
-            <div className="pt-16">
-                <p className="text-[15px] inline border rounded-full p-3 text-black">SEO Optimization</p>
-                <p className=" pt-10 sm:pt-20 font-semibold text-[20px] sm:text-[30px] text-black"> 📈 TechCorp – SEO Strategy
-                </p>
-                <p className="pt-3 text-[#c3bdbd] text-[12px] text-center sm:text-[15px] "> Increased organic traffic by 50% with comprehensive keyword <br className="hidden md:block"/> targeting and technical SEO.
-                </p>
-            </div>
-            <div className="pt-10">
-            <Image src={Assets.image1} className="rounded-xl w-full lg:w-[50vw] max-w-[450px]" alt="SEO optimization"/>
-            </div>
-        </div>
 
-        {/* Section3 */}
-        <div className="flex border-b flex-col xl:flex-row border-b-[#646464] justify-center items-center xl:justify-between pb-0 sm:pb-10">
-        <div className="pt-10">
-            <Image src={Assets.image5} className="rounded-xl w-full" alt="SEO optimization"/>
-            </div>
-            <div className=" py-10">
-                <p className="p-3 border rounded-full text-[15px] inline text-black">Social Media Management</p>
-                <p className=" pt-6 sm:pt-20 text-[20px] sm:text-[30px] text-black">📲 FashionWave – Social Revamp</p>
-                <p className="text-[#c3bdbd] text-[12px] sm:text-[15px] pt-6"> 75% boost in audience interaction through creative reels and influencer-led campaigns.</p>
-            </div>
-            
-        </div>
-        {/* Section4 */}
+        {/* Section 2 */}
+<div className="flex justify-center ">
+  <div className="bg-[#F4F4F4] flex flex-col xl:flex-row items-center justify-between border-b border-b-[#646464] border-l-4 border-l-[#6EC6AD] rounded-3xl mt-[20px] sm:mt-[86px] w-full max-w-[1500px] overflow-hidden">
 
-        <div className="flex flex-col items-center xl:justify-between xl:flex-row">
-            <div className="py-10 ">
-            <p className="p-3 border rounded-full text-[15px] inline text-black">Brand Strategy</p>
-            <p className=" pt-6 sm:pt-20 text-[20px] sm:text-[30px] text-black">🏠 UrbanNest – Brand Identity </p>
-            <p className="text-[#c3bdbd] text-[12px] sm:text-[15px] pt-6"> Complete identity overhaul that improved recall and engagement by 60%.</p>
-            </div>
-            <div className="sm:pt-10">
-            <Image src={Assets.image7} className="rounded-xl w-full" alt="SEO optimization"/>
-            </div>
-        </div>
+    {/* Text Section */}
+    <div className="flex flex-col items-center xl:items-start text-center xl:text-left p-6 sm:p-12">
+      <p className="text-[15px] border rounded-full p-3 text-black inline-block">
+        SEO Optimization
+      </p>
+      <p className="pt-10 sm:pt-20 font-semibold text-[20px] sm:text-[30px] text-black">
+        📈 TechCorp – SEO Strategy
+      </p>
+      <p className="pt-3 text-[#C3BDBD] text-[12px] sm:text-[15px] leading-relaxed">
+        Increased organic traffic by 50% with comprehensive keyword 
+        <br className="hidden md:block" /> targeting and technical SEO.
+      </p>
+    </div>
+
+    {/* Image Section */}
+    <div className="w-full xl:w-auto pt-6 xl:pt-0 flex justify-center">
+      <Image
+        src={Assets.image3}
+        alt="SEO optimization"
+        className="rounded-2xl w-full max-w-[450px] object-cover h-[300px] sm:h-[400px] xl:h-[500px]"
+      />
+    </div>
+
+  </div>
+</div>
+
+{/* Section 3 */}
+<div className="flex justify-center ">
+  <div className="bg-[#F4F4F4] flex flex-col xl:flex-row-reverse items-center justify-between border-b border-b-[#646464] border-r-4 border-r-[#6EC6AD] rounded-3xl mt-[20px] sm:mt-[86px] w-full max-w-[1500px] overflow-hidden">
+
+    {/* Text Section */}
+    <div className="flex flex-col items-center xl:items-start text-center xl:text-left p-6 sm:p-12">
+      <p className="text-[15px] border rounded-full p-3 text-black inline-block">
+        SEO Optimization
+      </p>
+      <p className="pt-10 sm:pt-20 font-semibold text-[20px] sm:text-[30px] text-black">
+        📈 TechCorp – SEO Strategy
+      </p>
+      <p className="pt-3 text-[#C3BDBD] text-[12px] sm:text-[15px] leading-relaxed">
+        Increased organic traffic by 50% with comprehensive keyword 
+        <br className="hidden md:block" /> targeting and technical SEO.
+      </p>
+    </div>
+
+    {/* Image Section */}
+    <div className="w-full xl:w-auto pt-6 xl:pt-0 flex justify-center">
+      <Image
+        src={Assets.image1}
+        alt="SEO optimization"
+        className="rounded-2xl w-full max-w-[450px] object-cover h-[300px] sm:h-[400px] xl:h-[500px]"
+      />
+    </div>
+
+  </div>
+</div>
+
+{/* Section 4 */}
+<div className="flex justify-center  ">
+  <div className="bg-[#F4F4F4] flex flex-col xl:flex-row items-center justify-between border-b border-b-[#646464] border-l-4 border-l-[#6EC6AD] rounded-3xl mt-[20px] sm:mt-[86px] w-full max-w-[1500px] overflow-hidden">
+
+    {/* Text Section */}
+    <div className="flex flex-col items-center xl:items-start text-center xl:text-left p-6 sm:p-12">
+      <p className="text-[15px] border rounded-full p-3 text-black inline-block">
+        SEO Optimization
+      </p>
+      <p className="pt-10 sm:pt-20 font-semibold text-[20px] sm:text-[30px] text-black">
+        📈 TechCorp – SEO Strategy
+      </p>
+      <p className="pt-3 text-[#C3BDBD] text-[12px] sm:text-[15px] leading-relaxed">
+        Increased organic traffic by 50% with comprehensive keyword 
+        <br className="hidden md:block" /> targeting and technical SEO.
+      </p>
+    </div>
+
+    {/* Image Section */}
+    <div className="w-full xl:w-auto pt-6 xl:pt-0 flex justify-center">
+      <Image
+        src={Assets.image4}
+        alt="SEO optimization"
+        className="rounded-2xl w-full max-w-[450px] object-cover h-[300px] sm:h-[400px] xl:h-[500px]"
+      />
+    </div>
+
+  </div>
+</div>
+
 
       </div>
     </div>

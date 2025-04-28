@@ -115,7 +115,7 @@ export default function AboutUs() {
           Join hands with a passionate team that believes in purpose, people, and pushing the limits of what&apos;s possible.
         </p>
         <Link href="/Contact">
-          <button className="bg-black cursor-pointer text-white font-semibold px-6 py-3 rounded-full hover:bg-[#013619] transition-all">
+          <button className="bg-[#6ec6ad] hover:bg-[#111722] cursor-pointer text-white font-semibold px-6 py-3 rounded-full  transition-all">
             Get in Touch
           </button>
         </Link>

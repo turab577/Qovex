@@ -5,14 +5,14 @@ export default function Footer() {
   return (
       
       <div className=' pt-6  '>
-    <div className='pt-6 bg-[#013619] px-1 sm:px-12 rounded-lg'>
+    <div className='pt-6 bg-[#111722] px-1 sm:px-12 rounded-lg'>
       <div className='bg-white py-10 rounded-lg '>
         <p className='capitalize text-[20px] sm:text-[40px] text-center flex justify-center text-black'>Let’s Launch Something <br className="hidden md:block"/> Powerful Together</p>
         <p className='text-[#848484] flex justify-center text-[15px]  text-center pt-3'>Ready to launch your digital marketing project? Let us craft strategies <br className='hidden sm:block'/> that drive results and growth.</p>
             
         <div className='flex justify-center pt-10'>
           <Link href="/Contact">
-        <div className='py-3 pl-6 pr-10 b g-[#74c8b0] rounded-lg inline-flex gap-3 cursor-pointer bg-[#74c8b0] hover:bg-[#013619] transition duration-500'>
+        <div className='py-3 pl-6 pr-10 b g-[#74c8b0] rounded-lg inline-flex gap-3 cursor-pointer bg-[#74c8b0] hover:bg-[#111722] transition duration-500'>
                 <Image src={Assets.Mail2} alt="Let's talk" className="w-[30px] h-[20px] "/>
         <p className='text-white text-[15px]'>Lets &apos; Talk</p>
         </div>

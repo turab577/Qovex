@@ -162,7 +162,7 @@ const AnChart = () => {
         borderRadius: "12px",
         boxShadow: "0 4px 18px rgba(0, 0, 0, 0.05)",
         backgroundColor: "#fff",
-        transition: "all 0.3s ease"
+        transition: "all 0.3s ease",
       }}
     >
       <canvas

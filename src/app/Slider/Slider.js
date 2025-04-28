@@ -17,9 +17,6 @@ export default function Slider() {
     Assets.image2,
     Assets.image3,
     Assets.image4,
-    Assets.image5,
-    Assets.image6,
-    Assets.image7,
   ];
 
   return (
@@ -38,7 +35,7 @@ export default function Slider() {
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
         }}
-        className="w-full max-h-[700px] mx-auto rounded-xl overflow-hidden"
+        className=" max-h-[500px] max-w-[1440px] mx-auto rounded-xl overflow-hidden"
       >
         {images.map((img, index) => (
   <SwiperSlide key={index}>

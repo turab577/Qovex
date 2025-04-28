@@ -14,13 +14,12 @@ export default function Team() {
   const [currentSlide, setCurrentSlide] = useState(1);
 
   const teamMembers = [
-    { image: Assets.Qaim, name: "Qaim Raza Khan", role: "Creative Director"},
+    { image: Assets.Qaim, name: "Qaim Raza Khan", role: "SEO expert . Wordpress Developer"},
     { image: Assets.Sarmast, name: "Sarmast Faiz", role: "Content Writer" },
-    { image: Assets.Ahsan, name: "Ahsan", role: "Full Stack Developer" },
+    { image: Assets.Turab, name: "Abu Turab Hassan", role: "Frontend developer" },
+    { image: Assets.Ahsan, name: "Ahsan", role: "Content Writer" },
     { image: Assets.Zain, name: "Zain Ul Abidin", role: "SEO Specialist" },
     { image: Assets.Sibte, name: "Sibte Hassan", role: "Graphic Designer" },
-    { image: Assets.Person7, name: "Emma Brown", role: "UI/UX Designer" },
-    { image: Assets.Person8, name: "Lina May", role: "Project Manager" },
   ];
 
   return (
@@ -37,7 +36,7 @@ export default function Team() {
       <div className="flex justify-end items-center gap-4 mb-4 pr-4">
         <button
           ref={prevRef}
-          className="text-xl bg-[#6ec6ad] px-2 rounded cursor-pointer hover:bg-[#03331abe] text-white transition"
+          className="text-xl bg-[#6ec6ad] px-2 rounded cursor-pointer hover:bg-[#111722] text-white transition"
         >
           {'<'}
         </button>
@@ -46,7 +45,7 @@ export default function Team() {
         </span>
         <button
           ref={nextRef}
-          className="text-xl bg-[#6ec6ad] px-2 rounded text-white cursor-pointer hover:bg-[#03331abe] transition"
+          className="text-xl bg-[#6ec6ad] px-2 rounded text-white cursor-pointer hover:bg-[#111722] transition"
         >
           {'>'}
         </button>
@@ -81,8 +80,8 @@ export default function Team() {
                 src={member.image}
                 alt={member.name}
                 width={300}
-                height={900}
-                className="w-full h-[330px] object-cover"
+                height={1000}
+                className="w-full h-[400px] object-cover"
               />
               <div className="pt-4 pb-6">
                 <p className="text-[16px] font-semibold text-black">{member.name}</p>

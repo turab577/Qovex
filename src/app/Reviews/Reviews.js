@@ -154,7 +154,7 @@ export default function Reviews() {
           <div className="flex justify-center items-center gap-6 pt-8">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
-              className="px-4 py-2 border cursor-pointer bg-[#74c8b0] hover:bg-[#03331abe] border-[#00000028] duration-500 text-[white] transition rounded-xl"
+              className="px-4 py-2 border cursor-pointer bg-[#74c8b0] hover:bg-[#111722] border-[#00000028] duration-500 text-[white] transition rounded-xl"
             >
               {"<"}
             </button>
@@ -162,7 +162,7 @@ export default function Reviews() {
             
             <button
               onClick={() => swiperRef.current?.slideNext()}
-              className="px-4 py-2 border cursor-pointer bg-[#74c8b0] hover:bg-[#03331abe] border-[#00000028] duration-500 text-[white]  rounded-xl transition"
+              className="px-4 py-2 border cursor-pointer bg-[#74c8b0] hover:bg-[#111722] border-[#00000028] duration-500 text-[white]  rounded-xl transition"
             >
               {">"}
             </button>
