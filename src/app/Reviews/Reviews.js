@@ -130,7 +130,7 @@ export default function Reviews() {
   onBeforeInit={(swiper) => {
     swiperRef.current = swiper;
   }}
-  className="w-full"
+  className="w-full cursor-grab active:cursor-grabbing"
 >
   {Clients.map((client) => (
     <SwiperSlide key={client.id}>

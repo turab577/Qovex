@@ -71,7 +71,7 @@ export default function Team() {
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
         }}
-        className="w-full"
+        className="w-full cursor-grab active:cursor-grabbing"
       >
         {teamMembers.map((member, index) => (
           <SwiperSlide key={index}>
