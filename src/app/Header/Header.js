@@ -11,13 +11,18 @@ export default function Header() {
     setIsVisible(prev => !prev);
   };
 
-  
+  const closeMenu = () => {
+    setIsVisible(false);
+  };
   
 
   // Handle overflow when menu is toggled
-  useEffect(() => {
-    document.body.style.overflowY = isVisible ? 'hidden' : 'auto';
-  }, [isVisible]);
+  useEffect (()=>{
+    document.addEventListener('mousedown', closeMenu);
+    return()=>{
+      document.removeEventListener('mousedown', closeMenu)
+    }
+  })
 
   // Reset on screen resize
   useEffect(() => {
