@@ -136,7 +136,7 @@ export default function Reviews() {
     <SwiperSlide key={client.id}>
       <div className="border border-[#dfdfdd] p-6 rounded-xl h-full">
         <div className="flex gap-4">
-          <Image src={client.image} alt="Clients" className="h-16 w-16 rounded-xl" />
+          <Image src={client.image} alt="Clients" className="h-20 w-20 rounded-xl" />
           <div>
             <div className="font-semibold text-lg md:text-xl text-black">{client.name}</div>
             <div className="text-[#c6c6c6] sm:pt-2">{client.Rank}</div>
